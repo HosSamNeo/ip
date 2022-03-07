@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IP</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="shortcut icon" href="images/fav-ip.ico" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500;700&family=Rubik:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css"
+    integrity="sha512-xodZBNTC5n17Xt2atTPuE1HxjVMSvLVW9ocqUKLsCC5CXdbqCmblAshOMAS6/keqq/sMZMZ19scR4PsZChSR7A=="
+    crossorigin=""/>
+
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>IP Address Tracker</h1>
+            <form>
+                <input type="text" id="search" placeholder="Search for any IP address or domain">
+                <button><i class="fa-solid fa-angle-right"></i></button>
+            </form>
+            <div class="api-data">
+                <div class="data">
+                    <h2>IP</h2>
+                    <p id="ip-api">-</p>
+                </div>
+                <hr>
+                <div class="data">
+                    <h2>Location</h2>
+                    <p id="loc-api">-</p>
+                </div>
+                <hr>
+                <div class="data">
+                    <h2>Time Zone</h2>
+                    <p id="time-api">-</p>
+                </div>
+                <hr>
+                <div class="data">
+                    <h2>ISP</h2>
+                    <p id="isp-api">-</p>
+                </div>
+            </div>
+        </div>
+    </header>
+    <section class="map">
+        <div id="live-map"></div>
+    </section>
+    <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"
+   integrity="sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA=="
+   crossorigin=""></script>
+   <script src="js/main.js"></script>
+
+</body>
+</html>
